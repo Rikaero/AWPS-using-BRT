@@ -19,24 +19,32 @@ The dataset is structured in such a way: question and equation split by three ve
 We pre-process the data by tokenizing the text and encoding the numerical values using one-hot encoding. The validation set of the dataset consists of 20% of the data. The training set is the rest of 80% of the dataset. Once the model is trained on the 80 side of the dataset, it will then be validated on the 20 side by our program to confirm our model accuracy.
 
 Results and Comparisons
+
 ![BRT vs LSTM vs RNN](Images/image-1.png)
+
 We compared our model to other similar models in the field. Our model outperforms the older models. The improvement over the models is can be seen and it can be said that the BRT model achieves very promising performance in solving arithmetic word problems.
 
 ![BRT Accuracy](Images/image-2.png)
+
 BRT Model Accuracy
 ![LSTM Accuracy](Images/image-3.png)
+
 LSTM Model Accuracy
 ![RNN Accuracy](Images/image-4.png)
+
 RNN Model Accuracy
 
 As shown in the accuracy graphs, BRT reaches higher accuracies at lower epochs.While the overall final accuracy is similar to that of other models but there are some key differences in the middle of the graphs. As shown by the above graphs, BRT achieves the same accuracy as the LSTM and RNN after sufficient training is done on our dataset. On the other hand, BRT achieves higher initial accuracy. Contrarily, RNN takes longer to get to the achieved accuracy. This shows that over a larger or more complex database, the BRT model will surpass in performance when compared to LSTM and RNN.
 
 
 ![BRT Loss](Images/image-5.png)
+
 BRT Model Loss
 ![LSTM Loss](Images/image-6.png)
+
 LSTM Model Loss
 ![RNN Loss](Images/image-7.png)
+
 RNN Model Loss
 
 As shown in the loss graphs, the model reaches optimal model loss after around 4 epochs. We can also see that model loss for LSTM and RNN respectively. The model loss for both LSTM and RNN take one epoch longer to get to a loss factor similar to that of BRT. This can show that BRT is trained more effectively than LSTM and RNN. Contrarily, both models have a similar trend to that of BRT.
