@@ -11,6 +11,8 @@ To use BRT for arithmetic problem solving, we first pre-process the input data b
 
 ![Model Architecture](Images/image.png)
 
+BRT Model Architecture
+
 The figure shows the model architecture of our BRT model. The first layer is an Embedding layer. This layer takes the input question size and the input sequence length as parameters. It maps each word index to a dense vector representation of size 64. The second layer is a Bidirectional LSTM layer with 64 units. The Bidirectional layer processes the input sequence in both forward and backward directions, capturing dependencies in both directions. The next layer is a Dense Layer followed by the MultiHeadAttention layer and then a TimeDistributed layer. The TimeDistributed wrapper applies the same Dense layer to each time step of the input sequence independently. After that, another TimeDistributed layer with a Dense layer and softmax activation is added. This layer produces the output predictions for each time step.
 
 Dataset Used
