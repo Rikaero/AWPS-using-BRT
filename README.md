@@ -27,9 +27,11 @@ We compared our model to other similar models in the field. Our model outperform
 ![BRT Accuracy](Images/image-2.png)
 
 BRT Model Accuracy
+
 ![LSTM Accuracy](Images/image-3.png)
 
 LSTM Model Accuracy
+
 ![RNN Accuracy](Images/image-4.png)
 
 RNN Model Accuracy
@@ -40,9 +42,11 @@ As shown in the accuracy graphs, BRT reaches higher accuracies at lower epochs.W
 ![BRT Loss](Images/image-5.png)
 
 BRT Model Loss
+
 ![LSTM Loss](Images/image-6.png)
 
 LSTM Model Loss
+
 ![RNN Loss](Images/image-7.png)
 
 RNN Model Loss
