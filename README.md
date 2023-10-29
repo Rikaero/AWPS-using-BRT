@@ -6,7 +6,7 @@ Model Description
 
 Our BRT model performs its actions using four simple steps. These steps are Input Encoding, Block Recurrent Network, Self-Attention, and Output Decoding.
 The first step in the BRT model is input embedding. The input problem is first tokenized into a set of readable tokens for the model. Then the tokens are embedded using an embedding layer. The embeddings represent each element of the input sequence as a greater-dimensional vector.
-Each of the recurrent blocks in a BRT have a self-attention mechanism. This mimics to the self-attention used in transformers. The model is able to choose which section of the input problem to solve first based on the related context using this mechanism.
+Each of the recurrent blocks in a BRT have a self-attention mechanism. This mimics the self-attention used in transformers. The model is able to choose which section of the input problem to solve first based on the related context using this mechanism.
 The final step is decoding the output. The output sequence is generated using a decoder. The input given is the final hidden state of the last recurrent block. The decoder uses an output embedding layer to generate the output sequence, which can be a sequence of words, labels, or any other sequential output. 
 To use BRT for arithmetic problem solving, we first pre-process the input data by converting the text-based problem statements into a structured format that can be fed into the model. We then train the BRT model using a supervised learning approach, where the model's parameters are optimised to reduce the discrepancies between its predicted output and the true solution to the problem.
 
@@ -26,7 +26,7 @@ Results and Comparisons
 
 ![BRT vs LSTM vs RNN](Images/image-1.png)
 
-We compared our model to other similar models in the field. Our model outperforms the older models. The improvement over the models is can be seen and it can be said that the BRT model achieves very promising performance in solving arithmetic word problems.
+We compared our model to other similar models in the field. Our model outperforms the older models. The improvement over the models can be seen and it can be said that the BRT model achieves very promising performance in solving arithmetic word problems.
 
 ![BRT Accuracy](Images/image-2.png)
 
@@ -40,7 +40,7 @@ LSTM Model Accuracy
 
 RNN Model Accuracy
 
-As shown in the accuracy graphs, BRT reaches higher accuracies at lower epochs.While the overall final accuracy is similar to that of other models but there are some key differences in the middle of the graphs. As shown by the above graphs, BRT achieves the same accuracy as the LSTM and RNN after sufficient training is done on our dataset. On the other hand, BRT achieves higher initial accuracy. Contrarily, RNN takes longer to get to the achieved accuracy. This shows that over a larger or more complex database, the BRT model will surpass in performance when compared to LSTM and RNN.
+As shown in the accuracy graphs, BRT reaches higher accuracies at lower epochs. While the overall final accuracy is similar to that of other models there are some key differences in the middle of the graphs. As shown by the above graphs, BRT achieves the same accuracy as the LSTM and RNN after sufficient training is done on our dataset. On the other hand, BRT achieves higher initial accuracy. Contrarily, RNN takes longer to get to the achieved accuracy. This shows that over a larger or more complex database, the BRT model will surpass in performance when compared to LSTM and RNN.
 
 
 ![BRT Loss](Images/image-5.png)
@@ -65,4 +65,4 @@ In terms of the model accuracy, there is much to see. With the advent of recent 
 
 Conclusion
 
-Compared to rule-based systems and symbolic regression, BRT has the edge of learning from data and adapt to different problem domains without requiring explicit human intervention. Additionally, BRT has shown superior performance in various benchmarks compared to LSTM and GRU, indicating its potential as a powerful tool for arithmetic problem solving. However, BRT's computational requirements and difficulty in interpreting its internal workings may is a limitation that makes it less suitable for certain applications compared to simpler methods like rule-based systems or symbolic regression. BRT also suffers from its inability to solve problems outside of its training set with a great accuracy. Ultimately, the goal of solving arithmetic word problems is to be implemented as a tool to aid teachers in teaching elementary school students as well as becoming a widely accepted tool.
+Compared to rule-based systems and symbolic regression, BRT has the edge of learning from data and adapting to different problem domains without requiring explicit human intervention. Additionally, BRT has shown superior performance in various benchmarks compared to LSTM and GRU, indicating its potential as a powerful tool for arithmetic problem solving. However, BRT's computational requirements and difficulty in interpreting its internal workings may be a limitation that makes it less suitable for certain applications compared to simpler methods like rule-based systems or symbolic regression. BRT also suffers from its inability to solve problems outside of its training set with great accuracy. Ultimately, the goal of solving arithmetic word problems is to be implemented as a tool to aid teachers in teaching elementary school students as well as becoming a widely accepted tool.
