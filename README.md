@@ -1,4 +1,4 @@
-# AWPS using BRT
+# Solving Arithmetic Word Problems using BRT
 
 Delhi Technological University Final Year Project
 
